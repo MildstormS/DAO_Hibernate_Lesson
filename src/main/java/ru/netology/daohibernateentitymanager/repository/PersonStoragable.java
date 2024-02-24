@@ -1,6 +1,6 @@
 package ru.netology.daohibernateentitymanager.repository;
 
-import ru.netology.daohibernateentitymanager.model.Person;
+import ru.netology.daohibernateentitymanager.entity.Person;
 
 import java.util.List;
 

@@ -1,12 +1,10 @@
-package ru.netology.daohibernateentitymanager.model;
+package ru.netology.daohibernateentitymanager.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,10 +22,6 @@ public class Person {
     @Id
     @Column(nullable = false)
     private Integer age;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 30)
-    private Gender gender;
 
     @Column(length = 50,
             name = "phone_number")
